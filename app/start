@@ -1,0 +1,6 @@
+// require('asar-node').register()
+const { register, addAsarToLookupPaths } = require('asar-node')
+register()
+addAsarToLookupPaths()
+const {startApp} = require('./app.asar/index.js')
+startApp()
